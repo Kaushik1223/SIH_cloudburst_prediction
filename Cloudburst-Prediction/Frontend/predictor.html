@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="predictor.css">
+    <title>Prediction</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-middle"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-home"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/rugvednarvenker/" class="nav-link nav-link-insta"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-home"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="predictor.html" class="nav-link">Predictor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://twitter.com/NarvenkerRugved" class="nav-link nav-link-twitter"></a>
+                    </li>
+                    <li class="nav-item nav-item-hidden">
+                        <a href="https://www.instagram.com/rugvednarvenker/" class="nav-link nav-link-insta"></a>
+                    </li>
+                </ul>
+            <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </div>
+        </header>
+<div class="Heading">
+    <div class="title">
+    <h3>Predictor<span</h3>
+</div>
+
+<section id="prediction-form">
+    <form class="form" action="/predict", method="POST">
+        <h1 class="my-3 text-center">Predictor</h1>
+        <div class="row">
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="date" class="date">Date</label>
+                    <input type="date" class="form-control" id="date" name="date">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="location" class="location" name="location">Location</label>
+                    <select class="location" id="location" name="location" aria-label="Location">
+                        <option selected>Select Location</option>
+                        <option value= 24>Bhowali</option>
+                        <option value= 7>Narendra_Nagar</option>
+                        <option value= 30>GaucharAirport</option>
+                        <option value= 46>Barkot</option>
+                        <option value= 33>RamNagar</option>
+                        <option value= 14>Tehri Garhwal</option>
+                        <option value= 36>VikasNagar</option>
+                        <option value= 21>Khatima</option>
+                        <option value= 2>Uttarkashi</option>
+                        <option value= 43>Pauri_Garhwal</option>
+                        <option value= 9>Dwarhat</option>
+                        <option value= 4>Badrinath</option>
+                        <option value= 11>Bageshwar</option>
+                        <option value= 15>Kedarnath</option>
+                        <option value= 17>Rishikesh</option>
+                        <option value= 45>Pauri_GarhwalAirport</option>
+                        <option value= 23>NainiSainiAirport</option>
+                        <option value= 28>Gangotri</option>
+                        <option value= 25>Uddham</option>
+                        <option value= 44>Kashipur</option>
+                        <option value= 42>Chamba</option>
+                        <option value= 5>Champavat</option>
+                        <option value= 12>Bhopeshwar</option>
+                        <option value= 19>RaniKhet</option>
+                        <option value= 47>KotdwarAirport</option>
+                        <option value= 13>Pantnagar</option>
+                        <option value= 6>Sitarganj</option>
+                        <option value= 32>Kotdwar</option>
+                        <option value= 40>Mussoorie</option>
+                        <option value= 31>Almora</option>
+                        <option value= 26>Chamoli</option>
+                        <option value= 35>Rudrapur</option>
+                        <option value= 1>Nainital</option>
+                        <option value= 37>Roorkee</option>
+                        <option value= 27>JolyAirport</option>
+                        <option value= 41>DevPrayag</option>
+                        <option value= 10>Haridwar</option>
+                        <option value= 16>Pithoragarh</option>
+                        <option value= 39>Haldwani</option>
+                        <option value= 34>BheemTal</option>
+                        <option value= 49>MaaGangaAirport</option>
+                        <option value= 38>Rudraprayag</option>
+                        <option value= 3>Dehradun</option>
+                        <option value= 18>Manglur</option>
+                        <option value= 22>Lohaghat</option>
+                        <option value= 8>Srinagar</option>
+                        <option value= 20>KarnaPrayag</option>
+                        <option value= 48>LansDowne</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="mintemp" class="mintemp"> Minimum temprature</label>
+                    <input type="text" class="form-control" id="mintemp" name="mintemp">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="maxtemp" class="maxtemp">Maximum Temperature</label>
+                    <input type="text" class="form-control" id="maxtemp" name="maxtemp">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="rainfall" class="rainfall">Rainfall</label>
+                    <input type="text" class="form-control" id="rainfall" name="rainfall">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="evaporation" class="evaporation">Evaporation</label>
+                    <input type="text" class="form-control" id="evaporation" name="evaporation">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="sunshine" class="sunshine">Sunshine</label>
+                    <input type="text" class="form-control" id="sunshine" name="sunshine">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="windgustspeed" class="windgustspeed">Wind Gust Speed</label>
+                    <input type="text" class="form-control" id="windgustspeed" name="windgustspeed">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="windspeed9am" class="windspeed9am">Wind Speed 9am</label>
+                    <input type="text" class="form-control" id="windspeed9am" name="windspeed9am">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="windspeed3pm" class="windspeed3pm">Wind Speed 3pm</label>
+                    <input type="text" class="form-control" id="windspeed3pm" name="windspeed3pm">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="humidity9am" class="humidity9am">Humidity 9am</label>
+                    <input type="text" class="form-control" id="humidity9am" name="humidity9am">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="humidity3pm" class="humidity3pm">Humidity 3pm</label>
+                    <input type="text" class="form-control" id="humidity3pm" name="humidity3pm">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="pressure9am" class="pressure9am">Pressure 9am</label>
+                    <input type="text" class="form-control" id="pressure9am" name="pressure9am">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="pressure3pm" class="pressure3pm">Pressure 3pm</label>
+                    <input type="text" class="form-control" id="pressure3pm" name="pressure3pm">
+                </div>
+            </div>
+            
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="temp9am" class="temp9am">Temperature 9am</label>
+                    <input type="text" class="form-control" id="temp9am" name="temp9am">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="temp3pm" class=temp3pm">Temperature 3pm</label>
+                    <input type="text" class="form-control" id="temp3pm" name="temp3pm">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="cloud9am" class="cloud9am">Cloud 9am</label>
+                    <input type="text" class="form-control" id="cloud9am" name="cloud9am">
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="cloud3pm" class="cloud3pm">Cloud 3pm</label>
+                    <input type="text" class="form-control" id="cloud3pm" name="cloud3pm">
+                </div>
+            </div>
+            
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="winddir9am" class="winddir9am" name = "winddir9am">Wind Direction at 9am</label>
+                    <select class="winddir9am" id="winddir9am" name="winddir9am" aria-label="Wind Direction 9am">
+                        <option selected>Select Wind Direction at 9am</option>
+                        <option value= 1>N</option>
+                        <option value= 5>W</option>
+                        <option value= 10>S</option>
+                        <option value= 15>E</option>
+                        <option value= 2>NW</option>
+                        <option value= 9>NE</option>
+                        <option value= 7>SW</option>
+                        <option value= 13>SE</option>
+                        <option value= 0>NNW</option>
+                        <option value= 3>NNE</option>
+                        <option value= 8>SSW</option>
+                        <option value= 11>SSE</option>
+                        <option value= 4>WNW</option>
+                        <option value= 6>WSW</option>
+                        <option value= 12>ENE</option>
+                        <option value= 14>ESE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="winddir3pm" class="winddir3pm" name = "winddir3pm">Wind Direction at 3pm</label>
+                    <select class="winddir3pm" id="winddir3pm" name = "winddir3pm" aria-label="Wind Direction at 3pm">
+                        <option selected>Select Wind Direction at 3pm</option>
+                        <option value= 2>N</option>
+                        <option value= 4>W</option>
+                        <option value= 8>S</option>
+                        <option value= 14>E</option>
+                        <option value= 0>NW</option>
+                        <option value= 11>NE</option>
+                        <option value= 9>SW</option>
+                        <option value= 10>SE</option>
+                        <option value= 1>NNW</option>
+                        <option value= 5>NNE</option>
+                        <option value= 7>SSW</option>
+                        <option value= 12>SSE</option>
+                        <option value= 3>WNW</option>
+                        <option value= 6>WSW</option>
+                        <option value= 13>ENE</option>
+                        <option value= 15>ESE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="windgustdir" class="windgustdir" name = "windgustdir">Wind Gust Direction</label>
+                    <select class="windgustdir" id="windgustdir" name = "windgustdir" aria-label="Wind Gust Direction">
+                        <option selected>Select Wind Gust Direction</option>
+                        <option value= 3>N</option>
+                        <option value= 4>W</option>
+                        <option value= 7>S</option>
+                        <option value= 15>E</option>
+                        <option value= 1>NW</option>
+                        <option value= 11>NE</option>
+                        <option value= 9>SW</option>
+                        <option value= 12>SE</option>
+                        <option value= 0>NNW</option>
+                        <option value= 6>NNE</option>
+                        <option value= 8>SSW</option>
+                        <option value= 10>SSE</option>
+                        <option value= 2>WNW</option>
+                        <option value= 5>WSW</option>
+                        <option value= 14>ENE</option>
+                        <option value= 13>ESE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="md-form">
+                    <label for="raintoday" class="raintoday" name="raintoday">Rain Today</label>
+                    <select class="raintoday" id="raintoday" name="raintoday" aria-label="Rain Today">
+                        <option selected>Did it Rain Today</option>
+                        <option value= 1>Yes</option>
+                        <option value= 0>No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 my-2 d-flex align-items-end justify-content-around">
+                <button type="submit" class="btn btn-info button" style="margin-left: 100%;">Predict</button>
+            </div>
+        </div>
+    </form>
+</section>
+<div>
+     <h1><center> {{ prediction }} </center></h1>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+ 
+<script src="predictor.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
