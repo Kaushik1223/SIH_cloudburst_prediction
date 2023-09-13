@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SignUp</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="Logo" style="text-align: center;">
+        <img src="Skypeia.jpeg" alt="">
+    </div>
+    <div class="form-modal">
+    
+        <div class="form-toggle">
+            <button id="login-toggle" onclick="toggleLogin()">log in</button>
+            <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+        </div>
+    
+        <div id="login-form">
+            <form>
+                <input type="text" placeholder="Enter email or username"/>
+                <input type="password" placeholder="Enter password"/>
+                <a href="index.html"><button type="button" class="btn login">login</button></a>
+                <p><a href="javascript:void(0)">Forgot Password</a></p>
+                <hr/>
+    
+            </form>
+        </div>
+    
+        <div id="signup-form">
+            <form>
+                <input type="email" placeholder="Enter your email"/>
+                <input type="text" placeholder="Choose username"/>
+                <input type="password" placeholder="Create password"/>
+                <a href="index.html"><button type="button" class="btn signup">create account</button></a>
+                <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+                <hr/>
+               
+            </form>
+        </div>
+    
+    </div>
+    <script src="Login.js"></script>    
+</body>
+</html>
